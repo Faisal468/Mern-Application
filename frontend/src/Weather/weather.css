@@ -1,0 +1,93 @@
+/* Main container for the weather app */
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f3f8ff;
+}
+
+/* App title styling */
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Container for input and search button */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+.search-container input {
+  flex: 1;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-container input:focus {
+  border-color: #007bff;
+}
+
+
+/* Button styling */
+.search-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Weather information container */
+.weather-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #eaf3ff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Weather location styling */
+.weather-container h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+/* Temperature display styling */
+.weather-container p:first-of-type {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+/* Weather condition description styling */
+.weather-container p:last-of-type {
+  font-size: 1.2rem;
+  color: #555;
+  font-style: italic;
+}

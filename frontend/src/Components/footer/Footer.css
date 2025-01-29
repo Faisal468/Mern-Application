@@ -1,0 +1,269 @@
+.foot{
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 11%;
+    padding-right: 21.5%;
+    border-bottom: 1px solid #333;
+  }
+  
+  .footer-logo img {
+    max-width: 120px;
+  }
+  
+  .footer-links {
+   
+    display: flex;
+    gap: 120px;
+  }
+  
+  .footer-links a {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .footer-links a::before {
+    content: "→"; /* Arrow symbol */
+    color: #d3ac5b; /* Arrow color */
+    margin-right: 10px; 
+  }
+  .footer-links a:hover {
+    color: #d3ac5b;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10% ;
+  }
+  
+  
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 14px;
+    color: #d3ac5b;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section p,
+  .footer-section ul,
+  .footer-section form {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    color: #fff;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .footer-section form input,
+  .footer-section form textarea {
+    width: 85%;
+    margin-bottom: 10px;
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .footer-section form button {
+    background-color: #d3ac5b;
+    color: #272d0c;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-info {
+    color: #fff; 
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .contact-info span{
+    font-size: 14px;
+  }
+
+  .submit  {
+    background-color: #d3ac5b;
+    color: #272d0c;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .submit:hover {
+    background-color: white;
+    
+    color:  #d3ac5b;
+  }
+
+
+
+  @media (max-width: 980px) {
+    .footer-top {
+        padding-left: 8%;
+        padding-right: 8%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .footer-links {
+        gap: 40px;
+        justify-content: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+  
+    .footer-container {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+  
+    .footer-section {
+        margin: 10px 0;
+    }
+  
+  }  
+
+  @media (max-width: 768px) {
+    .footer-top {
+        padding: 0 5%;
+    }
+  
+    .footer-logo img {
+        max-width: 100px;
+    }
+  
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+  
+    .footer-container {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+  
+    .footer-section {
+        margin: 20px 0;
+    }
+  
+    .footer-section h3 {
+        font-size: 16px;
+    }
+  
+    .footer-section p,
+    .footer-section ul,
+    .footer-section form {
+        font-size: 13px;
+    }
+  
+    .footer-section form input,
+    .footer-section form textarea {
+        font-size: 12px;
+    }
+  
+    .footer-section form button {
+        padding: 8px 16px;
+    }
+  }  
+
+  @media (max-width: 480px) {
+    .footer-top {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+  
+    .footer-logo img {
+        max-width: 80px;
+    }
+  
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .footer-container {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+  
+    .footer-section {
+        margin: 20px 0;
+    }
+  
+    .contact-info{
+      font-size: 12px;
+    }
+    .footer-section h3 {
+        font-size: 15px;
+    }
+  
+    .footer-section p,
+    .footer-section ul,
+    .footer-section form {
+        font-size: 12px;
+    }
+  
+    .footer-section form input,
+    .footer-section form textarea {
+        font-size: 11px;
+        padding: 8px;
+    }
+  
+    .footer-section form button {
+        padding: 8px 16px;
+    }
+  
+    .footer-links a {
+        font-size: 14px;
+    }
+  }  
+
+  @media (max-width: 1024px) {
+    .footer-top {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+  
+    .footer-links {
+        gap: 80px;
+    }
+  
+    .footer-container {
+        padding: 20px 8%;
+    }
+  
+    .footer-section h3 {
+        font-size: 10px;
+    }
+  
+    .footer-section p,
+    .footer-section ul,
+    .footer-section form {
+        font-size: 10px;
+    }
+  }

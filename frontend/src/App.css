@@ -1,0 +1,12 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+  background-image: -o-linear-gradient();
+  /* Prevents horizontal overflow */
+}

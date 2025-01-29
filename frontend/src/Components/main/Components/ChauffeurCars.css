@@ -1,0 +1,229 @@
+.container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    background-color: white;
+    max-width: 1800px; /* Max width of 1600px */
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    overflow-x: hidden;
+  }
+  
+  .title {
+    margin-top: 70px;
+    font-size: 36px;
+    color: #d4a515;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 1.8;
+    padding: 0 100px 0;
+  }
+  
+  .cars-wrapper {
+    display: flex;
+    justify-content: space-around; /* Center cars across the row */
+    align-items: center; /* Align items to the center */
+  }
+  
+  .car-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .car-item {
+    flex: 1 1 auto;
+    max-width: 500px; /* Cap max width to keep alignment */
+    text-align: center;
+  }
+  
+  .car-image {
+    width: 300px; /* Consistent width */
+    height: 150px; /* Consistent height */
+    overflow: hidden;
+    margin-top: 20px;
+    
+  }
+  
+  .car-image img {
+    width: 100%; /* Fill container */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: contain; /* Show full car */
+  }
+  
+  .car-content {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    margin: auto;
+  }
+  
+  .car-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .car-description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .btn:hover {
+    background-color: #f0c14b;
+    color: black;
+  }
+  
+  .image-button {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 50px;
+  }
+  
+  .image-button img {
+    width: 70%;
+    height: auto;
+  }
+  
+  /* Responsive design for 1024px */
+  @media (max-width: 1024px) {
+    .cars-wrapper {
+      flex-direction: column; /* Stack cars vertically */
+      align-items: center; /* Center align the items */
+    }
+  
+    .car-box {
+      flex-direction: column; /* Stack car items and arrows */
+    }
+  
+    .car-item {
+      flex: 1 1 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Space between car items */
+      max-width: none; /* Remove max-width to allow full width */
+      padding-right: 0; /* Remove right padding on smaller screens */
+    }
+  
+    .car-image {
+      width: 100%; /* Use full width for smaller screens */
+      height: auto; /* Adjust height based on aspect ratio */
+    }
+  }
+  
+  /* Responsive design for 980px */
+  @media (max-width: 980px) {
+    .cars-wrapper {
+      flex-direction: column; /* Stack cars vertically */
+      align-items: center; /* Center align the items */
+    }
+  
+    .car-box {
+      flex-direction: column; /* Stack car items and arrows */
+    }
+  
+    .car-item {
+      flex: 1 1 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Space between car items */
+      max-width: none; /* Remove max-width to allow full width */
+      padding-right: 0; /* Remove right padding on smaller screens */
+    }
+  
+    .car-image {
+      width: 100%; /* Use full width for smaller screens */
+      height: auto; /* Adjust height based on aspect ratio */
+    }
+  }
+  
+  /* Responsive design for 768px */
+  @media (max-width: 768px) {
+    .cars-wrapper {
+      flex-direction: column; /* Stack cars vertically */
+      align-items: center; /* Center align the items */
+    }
+  
+    .car-box {
+      flex-direction: column; /* Stack car items and arrows */
+    }
+  
+    .car-item {
+      flex: 1 1 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Space between car items */
+      max-width: none; /* Remove max-width to allow full width */
+      padding-right: 0; /* Remove right padding on smaller screens */
+    }
+  
+    .car-image {
+      width: 100%; /* Use full width for smaller screens */
+      height: auto; /* Adjust height based on aspect ratio */
+    }
+  }
+  
+  /* Responsive design for 480px */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 28px; /* Smaller title font */
+    }
+  
+    .subtitle {
+      font-size: 16px; /* Smaller subtitle font */
+    }
+  
+    .description {
+      font-size: 12px; /* Smaller description font */
+      padding: 0 10px 0;
+    }
+  
+    .car-title {
+      font-size: 20px; /* Smaller car title font */
+    }
+  
+    .car-description {
+      font-size: 14px; /* Smaller car description font */
+    }
+  
+    .btn {
+      padding: 8px 16px; /* Smaller button padding */
+    }
+  
+    .image-button {
+      width: 40px; /* Smaller arrow button */
+      height: 40px; /* Smaller arrow button */
+    }
+  
+    .image-button img {
+      width: 60%; /* Smaller image in arrow button */
+    }
+  }
+  

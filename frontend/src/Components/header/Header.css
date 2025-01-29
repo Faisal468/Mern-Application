@@ -1,0 +1,88 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+
+/* Logo and Navigation */
+.topp {
+    display: flex; /* Align logo and nav-links on the same line */
+    justify-content: space-between; /* Pushes nav-links to the right */
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    height: 40px; /* Adjust logo height as needed */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Ensures items are aligned to the right */
+    text-align: right;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-left: 15px; /* Reduced margin for closer spacing */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-links li a:hover { 
+    color: #f4c542;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .nav-links li {
+        margin-left: 10px; 
+    }
+
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+}
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+    .nav-links li a {
+        font-size: 12px;
+        display: flex;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+}

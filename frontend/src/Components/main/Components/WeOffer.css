@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+}
+
+.we-offer {
+  background-color: #283048;
+  color: #f4c542;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.we-offer h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #f4c542;
+}
+
+.offer-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.offer-item {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.offer-item h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #f4c542;
+}
+
+.offer-item p {
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+
+  margin-top: 10px;
+}
+
+.pentagon {
+  width: 150px;
+  height: 130px;
+  display: inline-block;
+  position: relative;
+  margin-left: 5%;
+  margin: 0 auto;
+}
+
+.pentagon img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);  */
+}
+
+.read-more {
+    margin-top: 3rem;
+    
+ }
+
+.read-more a {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  transition: background-color 0.3 ease;
+}
+
+.read-more a:hover {
+  background-color: #d3a236;
+}
+
+@media (max-width: 1024px) {
+  .offer-item {
+    width: 45%;
+  }
+  .we-offer h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .offer-item {
+    width: 45%;
+  }
+  .we-offer h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-item {
+    width: 100%;
+    padding: 0 40px 0;
+  }
+  .offer-container{
+    flex-direction: column;
+  }
+
+  .we-offer {
+    padding: 30px 10px;
+  }
+  .we-offer h2 {
+    font-size: 1.5rem;
+  }
+  .hexagon,
+  .hexagon-1 {
+    width: 120px;
+    height: 104px;
+  }
+}
+
+@media (max-width: 480px) {
+  .we-offer h2 {
+    font-size: 1.3rem;
+  }
+  .offer-item h3 {
+    font-size: 1.1rem;
+  }
+  .offer-item p {
+    font-size: 0.9rem;
+  }
+  .read-more a {
+    padding: 8px 16px;
+  }
+  .hexagon,
+  .hexagon-1 {
+    width: 100px;
+    height: 87px;
+  }
+}
